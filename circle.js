@@ -1,6 +1,6 @@
 // 559x794: 96PPI, 1748x2480: 300PPI
-let width = 4096;
-let height = 2160;
+let width = 559;
+let height = 794;
 
 function setup() {
     createCanvas(width, height); // 96PPI
@@ -10,7 +10,7 @@ function setup() {
     let centerY = height / 2;
 
     stroke(0);
-    strokeWeight(4);
+    strokeWeight(1);
     point(centerX, centerY);
 
     point(centerX, centerY-10);
@@ -22,7 +22,7 @@ function setup() {
     noFill();
 
     var maxRadius = width/4;
-    var minRadius = height/4;
+    var minRadius = height/20;
     for(var i = 0; i<200; i++) {
         var angle = Math.random() * Math.PI * 2
         var innerRadius = Math.random() * (maxRadius-minRadius) + minRadius
